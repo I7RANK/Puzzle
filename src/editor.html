@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Editor</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="icon" type="image/x-icon" href="img/puzzle.ico">
+</head>
+<body onload="add_piezas(25, true);">
+    <label id="titulo" class=""></label>
+    <div id="div_editor" class="tablero"></div>
+    <div id="add_img" class="add_img">
+        <img src="img/rec_b.png" class="imgs_toadd" onclick="chosen(this);">
+        <img src="img/curv_b.png" class="imgs_toadd" onclick="chosen(this);">
+        <img src="img/curv-x2_b.png" class="imgs_toadd" onclick="chosen(this);">
+        <img src="img/cruz_b.png" class="imgs_toadd" onclick="chosen(this);">
+        <img src="img/ini_a.png" class="imgs_toadd" onclick="chosen(this);">
+        <img src="img/fin_a.png" class="imgs_toadd" onclick="chosen(this);">
+    </div>
+
+    <div id="conffig">
+        <div id="div_save" class="conffig_divs">
+            <span id="guardar" class="sombra icon-cloud-upload" onclick="generar();"></span>
+            <label id="lbl_guardar">Guardar</label>
+        </div>
+        <div id="div_borrar" class="conffig_divs">
+            <span id="borrar_t" class="sombra icon-ex" onclick="cambio(true, this);"></span>
+            <span id="borrar_f" class="sombra icon-chulo ocultar" onclick="cambio(false, this);"></span>
+            <label id="lbl_borrar">Eliminar</label>
+        </div>
+        <div id="div_recargar" class="conffig_divs">
+            <span id="recargar" class="sombra icon-reload" onclick="recargar();"></span>
+            <label id="lbl_recargar">Recargar</label>
+        </div>
+        <div id="div_home" class="conffig_divs">
+            <span id="recargar" class="sombra icon-home" onclick="location.href='../index.html'"></span>
+            <label id="lbl_home">Inicio</label>
+        </div>
+    </div>
+    <script src="code.js"></script>
+</body>
+</html>

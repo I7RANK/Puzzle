@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Puzzle</title>
+	<link rel="stylesheet" href="src/styles.css">
+    <link rel="stylesheet" href="src/fonts.css">
+    <link rel="icon" type="image/x-icon" href="src/img/puzzle.ico">
+</head>
+<body>
+	<div id="interfaz">
+		<h1 id="tit" class="sombra">Puzzle</h1>
+		<div id="menu">
+			<a href="src/niveles.html" id="btn_j" class="btn_anim" onmouseover="c_line(this);" onmouseout="c_lineout(this);">
+				<span id="span_up1" class="btn_jug"></span>
+				<span id="span_rg1" class="btn_jug"></span>
+				<span id="span_dw1" class="btn_jug"></span>
+				<span id="span_lf1" class="btn_jug"></span>
+				Jugar
+			</a>
+			
+			<a href="src/editor.html" id="btn_p" class="btn_anim" onmouseover="c_line(this);" onmouseout="c_lineout(this);">
+				<span id="span_up2" class="btn_jpr"></span>
+				<span id="span_rg2" class="btn_jpr"></span>
+				<span id="span_dw2" class="btn_jpr"></span>
+				<span id="span_lf2" class="btn_jpr"></span>
+				Personalizar
+			</a>
+		</div>
+	</div>
+	<script src="src/code.js"></script>
+</body>
+</html>

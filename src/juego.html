@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Puzzle</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="icon" type="image/x-icon" href="img/puzzle.ico">
+</head>
+
+<body onload="add_piezas(25, false)">
+    <!-- <h1 class="centrar sombra tit_pag">Nivel 1</h1> -->
+    <div id="div_tit_juego" class="centrar">
+        <label id="tit_juego" class="centrar">Ganaste wee</label>
+        <span id="recargar" class="sombra icon-home" onclick="location.href='../index.html'"></span>
+    </div>
+    <div id="div_juego" class="tablero"></div>
+    <script src="code.js"></script>
+</body>
+
+</html>
