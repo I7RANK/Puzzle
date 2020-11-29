@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="fonts.css">
     <link rel="icon" type="image/x-icon" href="img/puzzle.ico">
+    <script src="toJson.js"></script>
 </head>
 <body onload="add_piezas(25, true);">
     <label id="titulo" class=""></label>
@@ -23,7 +24,7 @@
 
     <div id="conffig">
         <div id="div_save" class="conffig_divs">
-            <span id="guardar" class="sombra icon-cloud-upload" onclick="generar();"></span>
+            <span id="guardar" class="sombra icon-cloud-upload" onclick="generar(); toJson();"></span>
             <label id="lbl_guardar">Guardar</label>
         </div>
         <div id="div_borrar" class="conffig_divs">

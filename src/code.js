@@ -516,3 +516,17 @@ function c_lineout(tipo) {
         document.getElementById("btn_p").style.color = "#1742ff";
     }
 }
+
+// Get a reference to the database service
+var database = firebase.database();
+
+// var dataDB = firebase.database().ref('Datos').push();
+
+/* var userId = "frg"
+var us = "Frank";
+var name = "2";
+
+firebase.database().ref('users/' + userId).set({
+    user: us,
+    name_level: name,
+}); */
